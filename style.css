@@ -1,0 +1,404 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--blue-dark:#222A31; 
+--blue-mid:#114F66;
+--blue-soft:#2F3943;
+--accent:#D3D9D5;
+--accent-2:#748D92;
+}
+body{font-family:'Open Sans', Arial, sans-serif;font-size:16px;color:var(--blue-soft);line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:2rem}
+.site-header{background:transparent;padding:1rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Anton',sans-serif;letter-spacing:1px}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{font-family:'Libre Franklin',sans-serif;text-decoration:none;padding:.25rem .5rem}
+.main-nav a.cta{background:var(--blue-mid);color:white;border-radius:6px;padding:.5rem .75rem}
+.nav-toggle{display:none}
+
+/* --- Index --- */
+.index {
+  position: relative;
+  height: 90vh; /* fills top third to half of viewport */
+  background: url("24_0519%20(4507).png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.index .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay for contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.index-content h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.index-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+.index-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.index-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.btn-primary {
+  background-color: var(--blue-mid);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--blue-mid);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--blue-mid);
+  color: white;
+}
+/*--- About ---*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--blue-soft);
+  background-color: #fff;
+  line-height: 1.6;
+}
+/* --- Header --- */
+.brand {
+  font-family: "Anton", sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--blue-dark);
+}
+
+.main-nav a {
+  color: var(--blue-soft);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--blue-mid);
+}
+/* --- Main Layout --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* --- Index --- */
+.intro {
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  background: linear-gradient(to bottom right, var(--blue-dark), var(--blue-mid));
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.intro h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: rgba(47, 57, 67, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* --- Split Section (Two Columns) --- */
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  margin: 6rem 0;
+}
+
+.split div {
+  flex: 1;
+}
+
+.split h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 36px;
+  color: var(--blue-mid);
+  margin-bottom: 1rem;
+}
+
+.split ul {
+  list-style: none;
+  padding: 0;
+}
+
+.split li {
+  font-size: 18px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--accent);
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid var(--accent);
+  color: var(--blue-soft);
+  font-weight: 600;
+  font-size: 14px;
+}
+/* --- Contact Section --- */
+.contact {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #fff;
+}
+
+.contact h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+  color: var(--blue-dark);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--blue-dark);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Ghost lettering color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #2F3943;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--blue-mid);
+}
+
+/* Send Button */
+.btn-send {
+  background-color: #114F66;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-family: "Kameron", serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-send:hover {
+  background-color: var(--blue-dark);
+  transform: translateY(-2px);
+}
+/*---About---*/
+.about-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+/* Left side image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Right side text */
+.about-text {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  color: #2F3943; /* same blue-soft tone for readability */
+}
+
+.about-text h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #114F66; /* your mid-blue brand color */
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #2F3943;
+}
+/* --- Skills & Education --- */
+.skills-education {
+  display: flex;
+  gap: 3rem;
+}
+
+.skills-education > div {
+  flex: 1;
+}
+.portfolio-section {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.portfolio-section h2 {
+  font-family: 'Kameron', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-section .intro-text {
+  color: #444;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-item h3 {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #114F66;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/*next part*/
+.three-up{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;padding:3rem 0}
+.three-up h3{font-family:'Libre Franklin',sans-serif;font-size:28px}
+
+.featured h2{font-family:'Libre Franklin',sans-serif;font-size:48px;margin-bottom:1rem}
+.card{background:var(--accent);padding:1rem;border-radius:10px}
+.card h4{font-family:'Kameron',serif;font-size:22px}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.project-card{padding:1rem;border-radius:8px;background:#f7f9f8}
+.project-card h4{font-family:'Libre Franklin',sans-serif;font-size:28px}
+
+.site-footer{padding:2rem 0;border-top:1px solid #e6e6e6;margin-top:3rem}
+
+h1{font-size:64px} /* 48pt ≈ 64px */
+h2{font-family:'Libre Franklin',sans-serif;font-size:48px} /* 36pt ≈ 48px */
+h3{font-family:'Libre Franklin',sans-serif;font-size:37px} /* 28pt ≈ 37px */
+h4{font-family:'Kameron',serif;font-size:29px} /* 22pt ≈ 29px */
+p,li{font-family:'Open Sans',sans-serif;font-size:16px}
